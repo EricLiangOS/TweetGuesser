@@ -1,0 +1,29 @@
+.container {
+    width: 550px;
+    position: relative;
+    margin: 20px;
+}
+
+.twitter-tweet {
+    pointer-events: none;
+    cursor: default;
+}
+
+.text {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.overlap {
+    position: absolute;
+    z-index: 2;
+    margin: 20px;
+    top: 2px;
+    left: -4px;
+    background: white;
+    width: 450px;
+    height: 52px;
+}
