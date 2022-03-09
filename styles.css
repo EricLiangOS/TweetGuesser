@@ -1,29 +1,57 @@
-.container {
-    width: 550px;
-    position: relative;
-    margin: 20px;
+body {
+    padding: 3rem;
+    background-color: rgb(187, 203, 216);
 }
 
-.twitter-tweet {
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.round-font {
+    font-family: Gotham Rounded, sans-serif;
+}
+
+.box {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgba(255,255,255,0.3);
+    border: 3px solid grey;
+    text-align: center;
+    width: clamp(20rem, 30vw, 40rem);
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.214);
+    cursor: pointer;
+
+}
+
+.box:hover {
+    background-color: rgba(255,255,255,0.8);
+}
+
+#reset {
+    display: none;
+}
+
+
+.green-background {
+    background-color: rgba(46, 231, 117, 0.8);
+
+}
+
+.red-background {
+    background-color: rgba(209, 30, 30, 0.8);
+}
+
+.ignore {
     pointer-events: none;
-    cursor: default;
-}
-
-.text {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.overlap {
-    position: absolute;
-    z-index: 2;
-    margin: 20px;
-    top: 2px;
-    left: -4px;
-    background: white;
-    width: 450px;
-    height: 52px;
 }
